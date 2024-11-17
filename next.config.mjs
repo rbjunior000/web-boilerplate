@@ -5,6 +5,7 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
+  transpilePackages: ['lucide-react']
 };
 
 export default nextConfig;

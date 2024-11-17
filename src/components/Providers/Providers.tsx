@@ -1,18 +1,13 @@
+import type { PropsWithChildren } from 'react'
 import { forwardRef } from 'react'
-import type { Ref, PropsWithChildren } from 'react'
-import { Theme } from '../ui'
+import { ThemeProvider } from '../ui'
 
-type ProvidersProps = {
-}
+type ProvidersProps = {}
 
 const BaseProviders = (props: PropsWithChildren<ProvidersProps>) => {
   const { children, ...rest } = props
 
-  return (
-    <Theme {...rest}>
-        {children} 
-    </Theme>
-  )
+  return <ThemeProvider {...rest}>{children}</ThemeProvider>
 }
 
 export const Providers = forwardRef(BaseProviders)
