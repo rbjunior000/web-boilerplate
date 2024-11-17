@@ -1,0 +1,20 @@
+import { forwardRef } from 'react'
+import type { Ref, PropsWithChildren } from 'react'
+import { {{pascalCase name}} as Man{{pascalCase name}} } from '@mantine/core'
+
+type {{pascalCase name}}Props = {
+}
+
+const Base{{pascalCase name}} = (props: PropsWithChildren<{{pascalCase name}}Props>, ref: Ref<any>) => {
+  const { {{#if hasChildren}}children, {{/if}}...rest } = props
+
+  return (
+    <Man{{pascalCase name}} ref={ref} {...rest}>
+      {{#if hasChildren}}
+        {children} 
+      {{/if}}
+    </Man{{pascalCase name}}>
+  )
+}
+
+export const {{pascalCase name}} = forwardRef(Base{{pascalCase name}})

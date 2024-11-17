@@ -6,24 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "add:ui": "yarn plop ui",
+    "add:component": "yarn plop component"
   },
   "dependencies": {
     "@mantine/core": "7.14.1",
     "@mantine/hooks": "7.14.1",
+    "@testing-library/react": "^16.0.1",
     "next": "15.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^8.0.5",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-styling-webpack": "^0.0.6",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/nextjs": "^8.0.0",
+    "@storybook/react": "^8.0.0",
     "@types/node": "20.14.8",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.4",
+    "plop": "^4.0.1",
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "1.17.0",
     "postcss-simple-vars": "^7.0.1",
+    "storybook": "^8.0.0",
+    "storybook-dark-mode": "^3.0.3",
     "typescript": "5.5.2"
   },
   "packageManager": "yarn@4.5.1"
